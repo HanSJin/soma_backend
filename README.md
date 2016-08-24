@@ -6,9 +6,8 @@
 위 주소는 집 공유기 포트포워딩을 통해 실행하였습니다.
 
 ## 평가서버 name명
-평가 서버에서 제가 사용한 이름은 lmjing이며 최고 순위의 name값은 lmjing6입니다.
-real_name에 이미정을 사용하였으며 없이 호출한 경우도 있어 name값을 알려드립니다.
-이름으로 호출을 하려 하였으나 순위가 뒤쳐져 호출하지 않았습니다.
+lmjing20 : 0.72387755102
+이미정(\uc774\ubbf8\uc815) : 0.72387755102
 
 ## docker
 (https://hub.docker.com/r/lmjing/soma_backend/)
@@ -29,7 +28,7 @@ nltk.download()
 from konlpy.tag import Twitter
 from nltk.corpus import stopwords
 
-stop_words = stopwords.words('english')+ [u'1',u'2',u'3',u'4',u'5',u'6',u'7',u'8',u'9']
+stop_words = stopwords.words('english')+ [u'0',u'1',u'2',u'3',u'4',u'5',u'6',u'7',u'8',u'9']
 
 def set_konlpy(text):
     words = Twitter().pos(text)
