@@ -6,8 +6,7 @@
 위 주소는 집 공유기 포트포워딩을 통해 실행하였습니다.
 
 ## 평가서버 name명
-lmjing20 : 0.72387755102
-이미정(\uc774\ubbf8\uc815) : 0.72387755102
+이미정(\uc774\ubbf8\uc815)(lmjing20) : 0.72387755102
 
 ## docker
 (https://hub.docker.com/r/lmjing/soma_backend/)
