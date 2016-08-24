@@ -9,10 +9,9 @@
 이미정(\uc774\ubbf8\uc815)(lmjing20) : 0.72387755102
 
 ## docker
-(https://hub.docker.com/r/lmjing/soma_backend/)
+(https://hub.docker.com/r/lmjing/swmaestro_backend/)
 
-이미지 다운 : docker pull lmjing/
-soma_classifier에서 
+이미지 다운 : docker pull lmjing/swmaestro_backend에서 
 ```{.python}
 import nltk
 nltk.download()
