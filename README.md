@@ -29,7 +29,7 @@ nltk.download()
 from konlpy.tag import Twitter
 from nltk.corpus import stopwords
 
-stop_words = stopwords.words('english')
+stop_words = stopwords.words('english')+ [u'1',u'2',u'3',u'4',u'5',u'6',u'7',u'8',u'9']
 
 def set_konlpy(text):
     words = Twitter().pos(text)
@@ -42,10 +42,10 @@ for each in d_list:
     n_list.append(set_konlpy(each))
     print (set_konlpy(each))
 ```
-3. bigram을 사용 feature더 다양하게 추가
+3. trigram을 사용 feature더 다양하게 추가
 ```{.python}
 from sklearn.feature_extraction.text import CountVectorizer
-vectorizer = CountVectorizer(ngram_range=(1, 2),token_pattern=r'(?u)\b\w+\b', min_df=1)
+vectorizer = CountVectorizer(ngram_range=(1, 3),token_pattern=r'(?u)\b\w+\b', min_df=1)
 x_list = vectorizer.fit_transform(n_list)
 ```
 4. tfidf를 사용해 단어들의 중요도, 빈도수 파악
